@@ -1,26 +1,40 @@
 {
-  "name": "react-ts",
-  "version": "0.0.0",
+  "name": "my-app",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.5.0",
-    "@types/react": "16.8.2",
-    "@types/react-dom": "16.8.0",
     "antd": "4.12.3",
-    "react": "16.8.0",
-    "react-dom": "16.8.0",
+    "cra-template": "1.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "react-scripts-ts": "latest",
-    "typescript": "^4.4.3"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

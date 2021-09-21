@@ -38,20 +38,38 @@
     -->
 
     <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+        }
+
         #root {
             width: 100%;
             height: 100%;
             position: fixed;
             top: 0px;
             right: 0px;
-            z-index: 2147483647;
             background: transparent;
         }
 
         .ant-layout {
             height: 100%;
         }
-
+        .cursor {
+            cursor: pointer;
+        }
+        .footer .ant-form-item-control {
+            align-items: flex-end;
+        }
         .ant-menu,
         .ant-layout-sider {
             background: lightgray;
@@ -67,6 +85,7 @@
             color: white;
             font-size: medium;
         }
+
         .ant-layout-content .ant-layout {
             margin: 5%;
             font-size: 20;
